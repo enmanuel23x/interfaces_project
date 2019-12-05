@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping Cart</title>
+    <!--  Font Awesome  -->
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-all.min.css">
+    <!-- Custom styles  -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Tomorrow&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Navbar start -->
+<div class="nav" id="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header" style="padding-right: 50px;">
+        <a href="index.html"><div class="nav-title">ElectroPerú</div></a>
+    </div>
+    <div class="nav-btn">
+        <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
+    <div class="nav-links" id='nav-links'>
+        <a href="#"><i class="fas fa-sort-down"></i> Productos</a>
+        <a href="#"><i class="fas fa-sort-down"></i> Departamentos</a>
+        <div>
+            <a href="#">Cerrar Sesión <i class="fas fa-sign-out-alt"></i></a>
+        </div>
+        <div>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<!--    Navbar end    -->
+<!-- Content Start -->
+<div class="content-cart-info">
+    <div class="card-product">
+        <table cellspacing="20">
+            <tr>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Precio Unitario</th>
+                <th>Subtotal</th>
+            </tr>
+        </table>
+    </div>
+    <div class="card-product">
+        <img src="../assets/img/micro-1.jpg" style="width: 20%">
+        <p class="card-info">1</p>
+        <p class="card-info">100$</p>
+        <p class="card-info">100$</p>
+    </div>
+    <div class="card-product">
+        <img src="../assets/img/cafe-1.jpg" style="width: 20%">
+        <p class="card-info">3</p>
+        <p class="card-info">115$</p>
+        <p class="card-info">345$</p>
+    </div>
+    <div class="card-product">
+        <img src="../assets/img/refri-1.jpg" style="width: 20%">
+        <p class="card-info">2</p>
+        <p class="card-info">110$</p>
+        <p class="card-info">220$</p>
+    </div>
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">&raquo;</a>
+    </div>
+</div>
+<div class="content-info-cart">
+    <h1>Carrito</h1>
+    <hr>
+    <h3>Detalles de compra</h3>
+    <p>Direccion: <span><strong>Lorem ipsum dolor sit amet.</strong></span></p>
+    <p>Tipo de pago: <span><strong>Lorem ipsum dolor sit amet.</strong></span></p>
+    <p style="font-size: 20px">Total: <strong>665$</strong></p>
+    <hr>
+    <button class="btn btn-3 btn-3a "><i class="fas fa-money-bill"></i> Proceder con el pago</button>
+</div>
+<!-- Content End -->
+<!-- Footer start -->
+<div class="footer">ElectroPeru | Copyright 2019</div>
+<!-- Footer end-->
+</body>
+</html>

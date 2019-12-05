@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product</title>
+    <!--  Font Awesome  -->
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-all.min.css">
+    <!-- Custom styles  -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/slideshow.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Tomorrow&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Navbar start -->
+<div class="nav" id="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header" style="padding-right: 50px;">
+        <a href="index.html"><div class="nav-title">ElectroPerú</div></a>
+    </div>
+    <div class="nav-btn">
+        <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
+    <div class="nav-links" id='nav-links'>
+        <a href="#"><i class="fas fa-sort-down"></i> Productos</a>
+        <a href="#"><i class="fas fa-sort-down"></i> Departamentos</a>
+        <div>
+            <a href="#">Cerrar Sesión <i class="fas fa-sign-out-alt"></i></a>
+        </div>
+        <div>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<!--    Navbar end    -->
+<!-- Content Start -->
+<!-- Slideshow container -->
+<div class="slideshow-container">
+    <h1>producto</h1>
+    <div class="mySlides fade">
+        <img src="../assets/img/cafe-1.jpg" style="width:100%">
+        <div class="text">Caption Text</div>
+    </div>
+    <div class="mySlides fade">
+        <img src="../assets/img/refri-1.jpg" style="width:100%">
+        <div class="text">Caption Two</div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="../assets/img/micro-1.jpg" style="width:100%">
+        <div class="text">Caption Three</div>
+    </div>
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <br>
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</div>
+<div class="content-info">
+    <h1>Producto</h1>
+    <hr>
+    <h3>Detalles</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam autem blanditiis debitis iure quasi, ut vitae.
+        Accusamus animi asperiores, at deserunt expedita facere ipsum labore laborum libero maxime molestias officia,
+        optio porro, sunt velit. Aliquid commodi cumque distinctio, ducimus est exercitationem iure maiores nulla officia
+        quia quibusdam reprehenderit sapiente.</p>
+    <p style="font-size: 20px">Precio: <strong>250$</strong></p>
+    <label for="qty">Cantidad: </label>
+    <select name="qty" id="qty">
+        <option value="1" selected>1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+    <hr>
+    <p style="color: darkgreen; font-size: 20px"><strong>En existencia</strong></p>
+    <button class="btn btn-3 btn-3a"><i class="fas fa-shopping-cart"></i> Agregar al Carro</button>
+    <button class="btn btn-3 btn-3a "><i class="fas fa-money-bill"></i> Comprar ahora</button>
+</div>
+<!-- Content End -->
+<!-- Footer start -->
+<div class="footer">ElectroPeru | Copyright 2019</div>
+<!-- Footer end-->
+<!-- Scripts -->
+<script src="../assets/js/slideshow.js"></script>
+</body>
+</html>
