@@ -165,6 +165,7 @@
           flex-wrap: no-wrap;
           justify-content: flex-start;
           align-items: center;
+          border: 0.5px solid darkgray;
   
         }
           .card > .card-image{
@@ -218,3 +219,14 @@
           transition:none;
           box-shadow: 0px 2px 8px -1px rgba(0,0,0,0.3);
         }
+.back{
+  float: right;
+    margin-top: 10px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    width: auto;
+    font-size: 15px;
+    padding: 5px 10px;
+}

@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="../assets/css/login-register.css">
 </head>
 <body>
+    <input onclick="window.history.back();" class="back" type="button" value="<-Atras"> 
     <h5>Logo</h5>
         <div class="form">
       
                 <ul class="tab-group">
-                    <li class="tab active" id="log"><a href="#login">Iniciar Sesion</a></li>
-                    <li class="tab" id="sign"><a href="#signup">Nuevo Cliente</a></li>
+                    <li class="tab active" id="log"><a onclick="changeopc(0)">Iniciar Sesion</a></li>
+                    <li class="tab" id="sign"><a onclick="changeopc(1)">Nuevo Cliente</a></li>
                 </ul>
                 
                 <div class="tab-content">
@@ -24,17 +25,11 @@
                     <form action="/" method="post">
                     
                       <div class="field-wrap">
-                      <label>
-                        Correo..<span class="req">*</span>
-                      </label>
-                      <input type="email"required autocomplete="off"/>
+                      <input placeholder="Correo..." type="email"required autocomplete="off"/>
                     </div>
                     
                     <div class="field-wrap">
-                      <label>
-                        Contraseña...<span class="req">*</span>
-                      </label>
-                      <input type="password"required autocomplete="off"/>
+                      <input placeholder="Contraseña..." type="password"required autocomplete="off"/>
                     </div>
                     
                     <p class="forgot"><a href="#">¿Olvido de contraseña?</a></p>
@@ -44,45 +39,30 @@
                     </form>
           
                   </div>
-                  <div id="signup">   
+                  <div id="signup" >   
                     <h1>Registrarse Gratis</h1>
                     
                     <form action="/" method="post">
                     
                     <div class="top-row">
                       <div class="field-wrap">
-                        <label>
-                          Nombre...<span class="req">*</span>
-                        </label>
-                        <input type="text" required autocomplete="off" />
+                        <input placeholder="Nombre..." type="text" required autocomplete="off" />
                       </div>
                   
                       <div class="field-wrap">
-                        <label>
-                             Apellido...<span class="req">*</span>
-                        </label>
-                        <input type="text"required autocomplete="off"/>
+                        <input placeholder="Apellido..." type="text"required autocomplete="off"/>
                       </div>
                     </div>
           
                     <div class="field-wrap">
-                      <label>
-                        Correo...<span class="req">*</span>
-                      </label>
-                      <input type="email"required autocomplete="off"/>
+                      <input placeholder="Correo..." type="email"required autocomplete="off"/>
                     </div>
                     
                     <div class="field-wrap">
-                      <label>
-                        Contraseña...<span class="req">*</span>
-                      </label>
-                      <input type="password"required autocomplete="off"/>
+                      <input placeholder="Contraseña..." type="password"required autocomplete="off"/>
                     </div>
                     <div class="field-wrap">
-                            <label>
-                              Repetir contraseña...<span class="req">*</span>
-                            </label>
-                            <input type="password"required autocomplete="off"/>
+                            <input placeholder="Repetir contraseña..." type="password"required autocomplete="off"/>
                           </div>
                     <button type="submit" class="button button-block"/>Enviar</button>
                     
@@ -94,50 +74,5 @@
                 
           </div> <!-- /form -->
 </body>
-<script src="../assets/js/jquery.min.js"></script>
-<script>
-$('.form').find('input, textarea').on('keyup blur focus', function (e) {
-  
-  var $this = $(this),
-      label = $this.prev('label');
-
-	  if (e.type === 'keyup') {
-			if ($this.val() === '') {
-          label.removeClass('active highlight');
-        } else {
-          label.addClass('active highlight');
-        }
-    } else if (e.type === 'blur') {
-    	if( $this.val() === '' ) {
-    		label.removeClass('active highlight'); 
-			} else {
-		    label.removeClass('highlight');   
-			}   
-    } else if (e.type === 'focus') {
-      
-      if( $this.val() === '' ) {
-    		label.removeClass('highlight'); 
-			} 
-      else if( $this.val() !== '' ) {
-		    label.addClass('highlight');
-			}
-    }
-
-});
-
-$('.tab a').on('click', function (e) {
-  
-  e.preventDefault();
-  
-  $(this).parent().addClass('active');
-  $(this).parent().siblings().removeClass('active');
-  
-  target = $(this).attr('href');
-
-  $('.tab-content > div').not(target).hide();
-  
-  $(target).fadeIn(600);
-  
-});
-</script>
+<script src="../assets/js/login.js"></script>
 </html>

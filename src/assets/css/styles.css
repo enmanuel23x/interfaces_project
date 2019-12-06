@@ -67,8 +67,8 @@ hr{
 
 .card-info{
     display: inline-block;
-    padding-right: 120px;
-    padding-left: 20px;
+    padding-right: 25px;
+    padding-left: 80px;
     position:relative;
     bottom: 50px;
 }
