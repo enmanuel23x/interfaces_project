@@ -1,0 +1,37 @@
+body, ul, li{
+	margin: 0;
+	padding: 0;
+	
+  }
+  ul{
+	background: #1962b9;
+	min-width: 30px;
+	height: 100%;
+	width: max-content;
+	box-sizing: border-box;
+	position: absolute;
+  }
+  li{
+	list-style-type: none;
+	padding: 20px 0 20px 0px;
+	border-bottom: 1px solid #222;
+	transform: translateY(55px);
+	text-align: left;
+	cursor: pointer;
+  }
+  a{
+	color: white;
+	text-decoration: none;
+	padding: 20px 20px;
+  }
+  li:hover, .active{
+	background: #284ea8;
+	opacity: 1;
+  }
+  img{
+	width: 30px;
+	opacity: 0.6;
+  }
+  li:hover img, .active img{
+	opacity: 1;
+  }
