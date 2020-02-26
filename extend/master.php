@@ -14,6 +14,7 @@ include('./auth/connection.php');
     <link rel="stylesheet" href="./src/assets/css/slideshow.css">
     <link rel="stylesheet" href="./src/assets/css/styles.css">
     <link rel="stylesheet" href="./src/assets/css/modal.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
    <!-- Navbar start -->
     <div class="nav" id="nav">
@@ -74,9 +75,9 @@ if ($has_session = session_status() == PHP_SESSION_ACTIVE) {
     }
 }
 ?>
- 
+
             </div>
         </div>
         <div style="clear: both;"></div>
     </div>
-    <input onclick="window.history.back();" class="back" type="button" value="<-Atras"> 
+    <input onclick="window.history.back();" class="back" type="button" value="<-Atras">

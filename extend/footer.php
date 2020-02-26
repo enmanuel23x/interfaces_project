@@ -1,1 +1,1 @@
-<div class="footer">ElectroPeru | Copyright 2019</div>
+<div class="footer">ElectroPeru | Enmanuel León && Alejandro Sánchez | Copyright 2020</div>
