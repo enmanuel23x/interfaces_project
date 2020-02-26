@@ -1,10 +1,10 @@
 * {
     box-sizing: border-box;
   }
-  
+
   body {
     margin: 0px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro', ;
   }
   .dropdown{
     list-style: none;
@@ -51,15 +51,15 @@
   .nav {
     min-height: 52px;
     width: 100%;
-    background-color: #1962b9;
+    background-color: #181E26;
     position: relative;
     font-family: 'Source Sans Pro', sans-serif;
   }
-  
+
   .nav > .nav-header {
     display: inline;
   }
-  
+
   .nav > .nav-header > a > .nav-title {
     display: inline-block;
     font-size: 22px;
@@ -68,17 +68,17 @@
     font-family: 'Tomorrow', sans-serif;
 
   }
-  
+
   .nav > .nav-btn {
     display: none;
   }
-  
+
   .nav > .nav-links {
     display: inline;
     font-size: 18px;
     font-family: 'Source Sans Pro', sans-serif;
   }
-  
+
   .nav > .nav-links > a {
     display: inline-block;
     padding: 13px 10px 13px 10px;
@@ -103,7 +103,7 @@
   .nav > #nav-check {
     display: none;
   }
-  
+
   @media (max-width:600px) {
     .nav > .nav-btn {
       display: inline-block;
@@ -167,7 +167,7 @@
     bottom: 0;
     left: 0;
     padding: 1rem;
-    background-color: #1962b9;
+    background-color: #181E26;
     color: white;
     text-align: center;
   }
@@ -203,14 +203,14 @@ h4{
           box-shadow: 0px 2px 3px -1px rgba(0,0,0,0.3);
           transform:  rotateX(calc(var(--rY,0) * 1deg)) rotateY(calc(var(--rX,0) * 1deg));
           transition: all 0.5s cubic-bezier(.79,.74,.91,1.2) 0.1s;
-  
+
           display: flex;
           flex-direction: column;
           flex-wrap: no-wrap;
           justify-content: flex-start;
           align-items: center;
           border: 0.5px solid darkgray;
-  
+
         }
           .card > .card-image{
             max-height: 200px;
